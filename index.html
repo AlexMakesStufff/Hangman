@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Hangman</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Nova+Mono&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="H_Style.css">
+</head>
+
+<Body>
+
+	<div id="gameContainer">
+
+		<h1 id="title"> Hangman </h1>
+
+		<img id="hang" src="Images/Hanging_start.png">
+
+		<div id="wordContainers">
+
+			<div cellIndex = "0" class="cell"></div>
+			<div cellIndex = "1" class="cell"></div>
+			<div cellIndex = "2" class="cell"></div>
+			<div cellIndex = "3" class="cell"></div>
+			<div cellIndex = "4" class="cell"></div>
+			<div cellIndex = "5" class="cell"></div>
+			<div cellIndex = "6" class="cell"></div>
+			<div cellIndex = "7" class="cell"></div>
+			<div cellIndex = "8" class="cell"></div>
+
+		</div>
+
+		<input maxlength="9" id=inputBox type = "text">
+
+		<div id="KeyBoard">
+			
+			<div id="firstRow">
+
+			<button onclick="buttonPressed(this, this.textContent)" class=keyButton type="button">Q</button>
+			<button onclick="buttonPressed(this, this.textContent)" class=keyButton type="button">W</button>
+			<button onclick="buttonPressed(this, this.textContent)" class=keyButton type="button">E</button>
+			<button onclick="buttonPressed(this, this.textContent)" class=keyButton type="button">R</button>
+			<button onclick="buttonPressed(this, this.textContent)" class=keyButton type="button">T</button>
+			<button onclick="buttonPressed(this, this.textContent)" class=keyButton type="button">Y</button>
+			<button onclick="buttonPressed(this, this.textContent)" class=keyButton type="button">U</button>
+			<button onclick="buttonPressed(this, this.textContent)" class=keyButton type="button">I</button>
+			<button onclick="buttonPressed(this, this.textContent)" class=keyButton type="button">O</button>
+			<button onclick="buttonPressed(this, this.textContent)" class=keyButton type="button">P</button>
+	
+			</div>
+			<div id="secondRow">
+
+			<button onclick="buttonPressed(this, this.textContent)" class=keyButton type="button">A</button>
+			<button onclick="buttonPressed(this, this.textContent)" class=keyButton type="button">S</button>
+			<button onclick="buttonPressed(this, this.textContent)" class=keyButton type="button">D</button>
+			<button onclick="buttonPressed(this, this.textContent)" class=keyButton type="button">F</button>
+			<button onclick="buttonPressed(this, this.textContent)" class=keyButton type="button">G</button>
+			<button onclick="buttonPressed(this, this.textContent)" class=keyButton type="button">H</button>
+			<button onclick="buttonPressed(this, this.textContent)" class=keyButton type="button">J</button>
+			<button onclick="buttonPressed(this, this.textContent)" class=keyButton type="button">K</button>
+			<button onclick="buttonPressed(this, this.textContent)" class=keyButton type="button">L</button>
+			
+			</div>
+			<div id="thirdRow">
+
+			<button onclick="buttonPressed(this, this.textContent)" class=keyButton type="button">Z</button>
+			<button onclick="buttonPressed(this, this.textContent)" class=keyButton type="button">X</button>
+			<button onclick="buttonPressed(this, this.textContent)" class=keyButton type="button">C</button>
+			<button onclick="buttonPressed(this, this.textContent)" class=keyButton type="button">V</button>
+			<button onclick="buttonPressed(this, this.textContent)" class=keyButton type="button">B</button>
+			<button onclick="buttonPressed(this, this.textContent)" class=keyButton type="button">N</button>
+			<button onclick="buttonPressed(this, this.textContent)" class=keyButton type="button">M</button>
+			
+			</div>
+		</div>		
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+	<script src="H_Functionality.js"></script>
+
+</Body>
+
+</html>
